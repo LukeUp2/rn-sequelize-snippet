@@ -1,0 +1,7 @@
+{
+	"Model Rn-Sequelize": {
+        "prefix": "rnsq",
+        "body": "import Sequelize, { Model } from 'rn-sequelize';\nimport { sequelize } from '../sequelize';\n\nexport class $TM_FILENAME_BASE extends Model {}\n\n$TM_FILENAME_BASE.init(\n\t{\n\t\tid: {\n\t\t\ttype:Sequelize.UUIDV4,\n\t\t\tallowNull: false,\n\t\t\tdefaultValue: Sequelize.UUIDV4,\n\t\t\tprimaryKey: true\n\t\t},\n\t\tcreated_at: {\n\t\t\ttype: Sequelize.STRING,\n\t\t},\n\t\tupdated_at: {\n\t\t\ttype: Sequelize.STRING,\n\t\t\tdefaultValue: null\n\t\t},\n\t\tdeleted_at: {\n\t\t\ttype: Sequelize.STRING,\n\t\t\tdefaultValue: null\n\t\t},\n\t},\n\t{\n\t\tsequelize,\n\t\tmodelName: '$TM_FILENAME_BASE',\n\t\ttimestamps: false\n\t}\n\t\n);",
+        "description": ""
+    }
+}
